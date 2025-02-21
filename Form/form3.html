@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+
+        select,
+        textarea,
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            outline: none;
+            border: 2px solid #e2dfdf;
+        }
+
+        .main-box {
+            margin: 0 auto;
+            width: 500px;
+            min-height: 700px;
+            background-color: #ffffff;
+            border-top: 5px solid #f6b70a;
+            position: relative;
+        }
+
+        .main-box h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .main-box form {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .form-group input {
+            display: inline-block;
+        }
+
+        .form-group span img {
+            height: 18px;
+            width: 18px;
+        }
+
+        .form-group input {
+            padding: 12px 180px 12px 40px
+        }
+
+        .main-box .form-group {
+            margin-bottom: 25px;
+        }
+
+        .main-box .form-group4 {
+            display: flex;
+            gap: 8px;
+        }
+
+        .main-box .form-group4 input {
+            padding: 12px 40px;
+        }
+
+        .main-box button {
+            margin-top: 10px;
+            text-align: center;
+            background-color: #f6ba1b;
+            color: #ffffff;
+            width: 100%;
+            border: none;
+            padding: 12px 0;
+            cursor: pointer;
+        }
+
+        .main-box .radio,
+        .country,
+        .checkbox {
+            margin-bottom: 25px;
+        }
+
+        .main-box .country {
+            padding: 12px;
+        }
+
+        .checkbox label {
+            padding-left: 10px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group span {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .main-box .fname,
+        .lname {
+            position: relative;
+        }
+
+        .fname span,
+        .lname span {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .input-group span {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            padding-left: 7px;
+            border-right: 2px solid #e2dfdf;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fname span,
+        .lname span {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            padding-left: 7px;
+            border-right: 2px solid #e2dfdf;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radio {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-box">
+        <h1>Responsive Registrtion<br>Form</h1>
+        <form>
+            <div class="form-group form-group1">
+                <div class="input-group">
+                    <span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/2099/2099199.png" alt="mailbox">
+                    </span>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group form-group2">
+                <div class="input-group"><span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3064/3064155.png" alt="lock">
+                    </span>
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group form-group3">
+                <div class="input-group">
+                    <span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3064/3064155.png" alt="lock">
+                    </span>
+                    <input type="password" id="password" placeholder="Re-type Password">
+                </div>
+            </div>
+            <div class="form-group form-group4">
+                <div class="fname">
+                    <span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="profile">
+                    </span>
+                    <input type="text" id="fname" placeholder="First Name">
+                </div>
+                <div class="lname">
+                    <span>
+                        <img src="https://cdn-icons-png.flaticon.com/128/3033/3033143.png" alt="profile">
+                    </span>
+                    <input type="text" id="fname" placeholder="last-Name">
+                </div>
+            </div>
+
+            <div class="radio">
+                <div class="radiobtn">
+                    <input type="radio" id="Male" value="Male">
+                    <label>Male</label>
+                </div>
+                <div class="radiobtn">
+                    <input type="radio" id="Female" value="Female">
+                    <label>Female</label>
+                </div>
+            </div>
+
+
+            <select class="country" id="country" name="country" placeholder="Choose a country">
+                <option value="volvo">India</option>
+                <option value="fiat">France</option>
+                <option value="audi">America</option>
+            </select>
+            <div class="checkbox">
+                <input type="checkbox"><label>accept all terms and conditions</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox"><label>accept all terms and conditions</label>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

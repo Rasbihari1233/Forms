@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample-Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to left, #c235a4, #4c25b0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* .container {
+        width: 1220px;
+        margin: 0 auto;
+        height: 100vh;
+        background: linear-gradient(to left, #c235a4,#4c25b0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      } */
+        .black-box {
+            padding: 30px;
+            background-color: black;
+            color: white;
+            width: 800px;
+            height: 700px;
+            border-radius: 10px;
+        }
+
+        .black-box h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .black-box label {
+            font-size: 30px;
+        }
+
+        .black-box .form-group {
+            width: 100%;
+            font-size: 30px;
+            outline: none;
+            border: none;
+            margin: 20px 20px;
+            border-radius: 20px;
+        }
+
+        .black-box #fname {
+            padding: 15px 81px;
+            border-radius: 30px;
+            outline: none;
+            border: 0;
+        }
+
+        .black-box #email {
+            padding: 18px 255px;
+            border-radius: 30px;
+            outline: none;
+            border: 0;
+        }
+
+        .black-box textarea {
+            width: 90%;
+            padding: 15px;
+            height: 100px;
+            border-radius: 30px;
+            outline: none;
+            border: 0;
+        }
+
+        .required::after {
+            content: "*";
+            color: red;
+        }
+
+        .black-box button {
+            background-color: #e7115b;
+            padding: 15px 50px;
+            margin-top: 20px;
+            border-radius: 30px;
+            font-size: 20px;
+            outline: none;
+            border: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="black-box">
+        <h1>Contact Us</h1>
+        <form action="">
+            <div class="form-group">
+                <label class="required">Full Name</label>
+                <div class="input-group">
+                    <input type="text" id="fname" name="firstname" required />
+                    <input type="text" id="fname" name="lastname" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="required">Email</label>
+                <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+                <label class="required">Leave us a few word</label>
+                <textarea></textarea>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
